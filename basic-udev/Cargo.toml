@@ -1,6 +1,6 @@
 [package]
 name = "basic-udev"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Sean Cross <sean@xobs.io>"]
 description = "A drop-in, pure-rust implementation of some udev features"
