@@ -10,7 +10,3 @@ As of today, cargo does not support renaming dependencies in a `[patch]` section
 [patch.crates-io]
 udev = { git = "https://github.com/xobs/basic-udev.git" }
 ```
-
-## Progress
-
-This library is currently enough to be used as a drop-in replacement for [hidapi-rs](https://github.com/ruabmbua/hidapi-rs). Other projects are untested.
