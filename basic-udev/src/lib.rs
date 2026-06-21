@@ -40,7 +40,10 @@ impl Enumerator {
         for subsystem in &subsystems {
             let device_path = device_path.join(subsystem);
             for dir_entry in device_path.read_dir()? {
-                let dir_entry = dir_entry.unwrap();
+                let Ok(dir_entry) = dir_entry else {
+                    continue;
+                };
+
                 if let Ok(device) = Device::from_syspath(&dir_entry.path()) {
                     devices.push(device);
                 }
