@@ -213,7 +213,6 @@ impl Device {
         let mut parent = &self.parent;
         loop {
             let Some(unwrapped_parent) = parent else {
-                println!("Couldn't get parent device");
                 return Ok(None);
             };
 
